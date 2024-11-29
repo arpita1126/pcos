@@ -3,8 +3,7 @@ import logo from "../../assets/logo.png"; // Ensure the path to the logo is corr
 
 const Homescreen = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Header Section */}
+    <div className="min-h-screen bg-white">
       <div className="flex flex-col items-center justify-center h-screen text-center">
         <div className="mb-5">
           <img src={logo} alt="Ovahealth Logo" className="w-45 h-auto" />
@@ -13,17 +12,14 @@ const Homescreen = () => {
           Simplifying PCOS diagnosis through advanced AI, empowering women's health decisions.
         </div>
 
-        {/* Diagnosis Form Section */}
         <div className="w-full max-w-sm p-6 bg-white rounded-lg shadow-lg">
           <form>
-            {/* Name Input */}
-            <div className="mb-4">
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
+            <div className="mb-4" id="lang">
+              <div
+                className="block  text-start text-sm font-medium text-gray-700"
               >
                 Name
-              </label>
+              </div>
               <input
                 type="text"
                 id="name"
@@ -32,14 +28,13 @@ const Homescreen = () => {
               />
             </div>
 
-            {/* Age Input */}
             <div className="mb-4">
-              <label
-                htmlFor="age"
-                className="block text-sm font-medium text-gray-700"
+              <div
+                
+                className=" text-start block text-sm font-medium text-gray-700"
               >
                 Age
-              </label>
+              </div>
               <input
                 type="number"
                 id="age"
@@ -50,23 +45,23 @@ const Homescreen = () => {
 
             {/* Upload Image */}
             <div className="mb-6">
-              <label
+              <div
                 htmlFor="image"
                 className="block text-sm font-medium text-gray-700"
               >
                 Upload Image
-              </label>
+              </div>
               <input
                 type="file"
                 id="image"
-                className="mt-1 w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:border file:border-gray-300 file:rounded-md file:bg-gray-50 file:text-blue-700 hover:file:bg-blue-100"
+                className="mt-1 w-full text-sm text-white  file:mr-4 file:py-2 file:px-4 file:border file:border-gray-300 file:rounded-md file:bg-gray-50 file:text-blue-700 hover:file:bg-blue-100"
               />
             </div>
 
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full px-4 py-2 text-white bg-blue-800 rounded-md shadow-md hover:bg-blue-900 focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
+              className="w-full px-4 py-2 text-white bg-black rounded-md shadow-md hover:bg-blue-900 focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
             >
               Run Diagnosis
             </button>
