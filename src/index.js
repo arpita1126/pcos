@@ -5,9 +5,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
 import Homescreen from './pages/Homescreen/Homescreen';
 import About from './pages/About/About';
-import { Resources } from './pages/Resources/Resources';
+import  Resources from './pages/Resources/Resources';
+import  FAQ from './pages/FAQ/FAQ';
+import  How_it_works from './pages/How_it_works/How_it_works';
+import  Logout  from './pages/Logout/Logout';
 
 
 const Approuter = createBrowserRouter([
@@ -21,11 +25,24 @@ const Approuter = createBrowserRouter([
       },
       {
         path: "/About",
-        element: <About />
+        element: <About/>
       }, {
+        path: "/How_it_works",
+        element: <How_it_works />
+      },
+      {
         path: "/Resources",
         element: <Resources />
-      }
+      }, {
+        path: "/FAQ",
+        element: <FAQ />
+      },
+      {
+        path: "/Logout",
+        element: <Logout />
+      },
+      
+
 
     ]
   }

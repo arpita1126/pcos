@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const Resources = () => {
+const Resources = () => {
   return (
     <div>Reosuce pageedjbvfdbjvfdbjfvdjbdfvjhb</div>
   )
 }
+export default Resources
